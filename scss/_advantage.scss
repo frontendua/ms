@@ -1,0 +1,51 @@
+.advantage{
+    i{
+        color: #78a1de;
+    }
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #78a1de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    border-radius: 50%;
+    margin: 0;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
+    transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
+
+    &:hover{
+        border: 1px solid #fff;
+    box-shadow: 10px 10px 10px #ccc;
+    text-shadow: none;
+    }
+}
+/*
+.icon{
+    width: 100px;
+    height: 100px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
+    transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
+    i{
+        position: relative;
+    }
+    i::after{
+content:"";
+position: absolute;
+display: block;
+border: #000000 1px solid;
+width: 200%;
+height: 200%;
+top:-50%;
+left:-50%;
+border-radius: 50%;
+&:hover{
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
+    transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
+}
+    }
+}
+*/

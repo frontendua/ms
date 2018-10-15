@@ -1,0 +1,30 @@
+
+.welcome-image-area{
+    height: 100vh;
+    background: url(../img/bg-s.jpg) no-repeat center /cover;
+    padding: 0;
+    margin: 0;
+    box-shadow: 100vw 0 rgba(0, 0, 0, 0.5) inset;
+    .row{
+        height: 100vh;
+    color: #edefff;
+    }
+    p{
+margin-top: 15px;
+margin-bottom: 15px;
+    }
+    input{
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+background: transparent;
+border: 1px solid white;
+color: white;
+transition: 1s;
+cursor: pointer;
+&:hover{
+    background: #78a1de;
+    box-shadow: 0 0 30px #78a1de;
+}
+    }
+}
