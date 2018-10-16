@@ -2,6 +2,11 @@
     i{
         color: #78a1de;
     }
+    h2{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    
 }
 
 .icon{
@@ -14,6 +19,7 @@
     padding: 100px;
     border-radius: 50%;
     margin: 0;
+    margin-bottom:15%;
     text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
     transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
 
@@ -21,6 +27,10 @@
         border: 1px solid #fff;
     box-shadow: 10px 10px 10px #ccc;
     text-shadow: none;
+    }
+
+    ~p:last-child{
+        margin-bottom:15%;
     }
 }
 /*

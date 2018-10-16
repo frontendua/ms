@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(226, 225, 225);
+    background: rgb(243, 243, 243);
     padding-top:15%;
     padding-bottom:15%;
     padding-left: 10%;
@@ -11,7 +11,8 @@
     margin: 0;
     box-sizing:border-box;
     font-family: 'open_sanslight', sans-serif;
-    color:#555;
+    color:#78a1de;
+    min-height: 50vh;
 
     .h2{
         font-size: 2rem;

@@ -1,5 +1,6 @@
 
 .header-top-area{
+    z-index: 99 !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +23,10 @@ margin: 1rem;
     }
 }
 
+.header-top-area-scroll{
+    background: #78a1de;
+    padding: 20px 40px 15px 40px;
+}
 
 .nav-item {
     margin-left: 30px;
