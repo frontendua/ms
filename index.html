@@ -5,31 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MasterSkin - студия красоты</title>
     <link rel="stylesheet" href="style/style.css">
-  
+
 </head>
 
 <body>
-        <div id="preloader-area">
-                <div class="loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
+    <div id="preloader-area">
+        <div class="loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                        <form>
+                                <input type="hidden" name="project_name" value="MasterSkin">
+                                <input type="hidden" name="admin_email" value=" masterskin.dnepr@gmail.com">
+                                <input type="hidden" name="form_subject" value="Запись на сайте">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="hidden control-label">Процедура:</label>
+                                    <input type="text" name="Процедура" class="hidden form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-name" class="control-label">Ваше имя:</label>
+                                    <input type="text" name="Имя клиента" class="form-control" id="client-name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phonenumer" class="control-label">Ваше номер телефона:</label>
+                                    <input type="text" name="Номер телефона" class="form-control" id="client-phonenumer" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">Примечание:</label>
+                                    <textarea class="form-control" name="Описание" id="message-text" placeholder="Нашишите здесь дату и время " required=""></textarea>
+                                </div>
+                                <button type="submit" class="btn-card">Отправить заявку</button>
+                            </form>
+                </div>
+                
+              </div>
             </div>
+          </div>
     <header>
         <div class="header-top-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-2"><div class="logo">Masterskin.dp.ua</div></div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="logo">Masterskin.dp.ua</div>
+                    </div>
                     <div class="col-md-9 col-sm-10">
                         <ul class="d-flex justify-content-end">
-                            <li class="nav-item"><a href="">Home</a></li>
-                            <li class="nav-item"><a href="">About</a></li>
-                            <li class="nav-item"><a href="#description">Description</a></li>
-                            <li class="nav-item"><a href="">Contact</a></li>
-                            <li class="nav-item"><a href="">Maps</a></li>
+                            <li class="nav-item">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Maps</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -42,14 +91,14 @@
             <div class="row  align-items-center">
                 <div class="col-md-7"></div>
                 <div class="col-md-5 text-center">
-<h2>MasterSkin - студия красоты</h2>
-<p>г. Днепр, пр. Дмитрия Яворницкого (ex. К.Маркса) 39</p>
-<p>+38(096) 825-000-9 
-</p>
-<p>
-    Мы ждем именно тебя! 
-</p>
-<input type="button" value="Записаться">
+                    <h2>MasterSkin - студия красоты</h2>
+                    <p>г. Днепр, пр. Дмитрия Яворницкого (ex. К.Маркса) 39</p>
+                    <p>+38(096) 825-000-9
+                    </p>
+                    <p>
+                        Мы ждем именно тебя!
+                    </p>
+                    <input type="button" value="Записаться" data-target="#exampleModal" data-toggle="modal">
                 </div>
 
             </div>
@@ -65,22 +114,33 @@
             </div>
             <div class="row d-flex justify-content-around">
                 <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                        <div class="icon"><i class="far fa-thumbs-up fa-5x"></i></div>
-                        <p>price</p>
-                        <p>Quality</p>
+                    <div class="icon">
+                        <i class="far fa-thumbs-up fa-5x"></i>
+                    </div>
+                    <p>price</p>
+                    <p>Quality</p>
                 </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center"><div class="icon"><i class="far fa-map fa-5x"></i></div>
-            <p>Удобное место расположение</p>
-            <p> d</p>
-            </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center"><div class="icon"><i class="fas fa-couch fa-5x"></i></div>
-            <p>комфортные условия</p>
-            <p>одноразовые материал</p>
-            </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center"><div class="icon"><i class="far fa-check-circle fa-5x"></i></div>
-            <p>ТМ Велвет</p>
-            <p>чай кофе</p>
-            </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon">
+                        <i class="far fa-map fa-5x"></i>
+                    </div>
+                    <p>Удобное место расположение</p>
+                    <p> d</p>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon">
+                        <i class="fas fa-couch fa-5x"></i>
+                    </div>
+                    <p>комфортные условия</p>
+                    <p>одноразовые материал</p>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon">
+                        <i class="far fa-check-circle fa-5x"></i>
+                    </div>
+                    <p>ТМ Велвет</p>
+                    <p>чай кофе</p>
+                </div>
             </div>
         </div>
     </section>
@@ -89,11 +149,10 @@
             <div class="row">
                 <div class="col-md-6 m-0 p-0">
                     <div class="desc-text">
-                        <h2>Оксана М. / 
-                                Founder MasterSkin</h2>
-                        <p>Я, дипломированный мастер шугаринга 
-                                с опытом работы более 3-х лет. 
-                                Скорость и профессионализм - мое кредо.</p>
+                        <h2>Оксана М. / Founder MasterSkin</h2>
+                        <p>Я, дипломированный мастер шугаринга с опытом работы более 3-х лет. Скорость и профессионализм - мое
+                            кредо.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 m-0 p-0">
@@ -101,12 +160,16 @@
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-6 m-0 p-0">
-                        <div class="desc-img2"></div>
+                    <div class="desc-img2"></div>
                 </div>
-                <div class="col-md-6 m-0 p-0"><div class="desc-text">
+                <div class="col-md-6 m-0 p-0">
+                    <div class="desc-text">
                         <h2>Принципы</h2>
-                        <p>В своей работе использую только профессиональную пасту и уходовую линию ТМ VELVET (Канада). Все расходные материалы одноразовые. Инструмент проходит тщательную стерилизационную обработку после каждого клиента. С большой ответственностью и заботой отношусь к Вашему здоровью!</p>
-                    </div></div>
+                        <p>В своей работе использую только профессиональную пасту и уходовую линию ТМ VELVET (Канада). Все расходные
+                            материалы одноразовые. Инструмент проходит тщательную стерилизационную обработку после каждого
+                            клиента. С большой ответственностью и заботой отношусь к Вашему здоровью!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -122,6 +185,176 @@
             </div>
         </div>
     </section>
+
+    <section class="price" id="price">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center mb-3 mt-3">
+                    <h2>Прайс на наши услуги</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-center">Шугаринг</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Услуга</th>
+                                <th scope="col">Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Глубокое бикини</td>
+                                <td>180 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Классическое бикини</td>
+                                <td>140 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Ноги полностью</td>
+                                <td>260 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Голени / бедра</td>
+                                <td>140 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Руки</td>
+                                <td>150 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Подмышки</td>
+                                <td>60 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Верхняя губа</td>
+                                <td>60 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Поясница/живот/ягодицы</td>
+                                <td>60 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <table class="table table-striped">
+                        <h2 class="text-center">Ногтевой сервис</h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">Услуга</th>
+                                <th scope="col">Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Обрезной маникюр</td>
+                                <td>120 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Обрезной маникюр + гель лак</td>
+                                <td>200 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Аппартный маникюр + гель лак</td>
+                                <td>220 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Обрезной педикюр + гель лак</td>
+                                <td>220 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Аппартный педикюр + гель лак</td>
+                                <td>240 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Дизайн 1 ноготка</td>
+                                <td>от 10 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Сниятие гель лака чужого мастера</td>
+                                <td>20 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Сниятие гель лака нашего мастера</td>
+                                <td>Бесплатно</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <div class="col-md-4">
+                    <table class="table table-striped">
+                        <h2 class="text-center">Наращиване рестниц</h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">Услуга</th>
+                                <th scope="col">Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Натуральный</td>
+                                <td>230 грн</td>
+                            </tr>
+                            <tr>
+                                <td>2 Д</td>
+                                <td>250 грн</td>
+                            </tr>
+                            <tr>
+                                <td>3 Д</td>
+                                <td>300 грн</td>
+                            </tr>
+                            <tr>
+                                <td>4-5 Д</td>
+                                <td>350 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Снятие рестничек другого мастера</td>
+                                <td>+50 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Сниятие рестничек нашего мастера</td>
+                                <td>Бесплатно</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-3 mt-3">
+                        <input type="button" value="Записаться">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="insta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col text-center mb-3">
+                    <h2>Наши работы и отзывы</h2>
+                    <p>Подписывайтесь на наш instagram</p>
+                </div>
+            </div>
+
+            
+
+            <div id="instafeed" class="row">
+
+            </div>
+        </div>
+    </section>
+    <section id="map" class="map">
+        <div id="mapBlock">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8210064840096!2d35.05134111576633!3d48.459963779250494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dbc16e0179%3A0xb2961f40baad9352!2z0L_RgNC-0YHQv9C10LrRgiDQlNC80LjRgtGA0LjRjyDQr9Cy0L7RgNC90LjRhtC60L7Qs9C-LCAzOSwg0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1542408159894"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -129,9 +362,17 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>
+    <script src="js/instafeed.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/jq.js"></script>
 
 
-        <script src="js/jq.js"></script>    </body>
+
+
+
+</body>
 
 </html>

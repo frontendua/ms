@@ -60,6 +60,12 @@ border-radius: 50%;
     100%,
     80% { -webkit-transform: scale(0); transform: scale(0); }
   40% { -webkit-transform: scale(1); transform: scale(1); } }
+#map { overflow: hidden; height: 100vh; width: 100%; }
+#map #mapBlock { padding-top: 20%; height: 100%; }
+
+input { padding: 15px; text-align: center; text-transform: uppercase; background: transparent; border: 1px solid white; color: white; -webkit-transition: 1s; transition: 1s; cursor: pointer; }
+input:hover { background: #78a1de; -webkit-box-shadow: 0 0 30px #78a1de; box-shadow: 0 0 30px #78a1de; }
+
 html, body, div, p, ul, li { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'open_sanslight', sans-serif; }
 
 img { border-style: none; }

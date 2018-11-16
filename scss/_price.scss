@@ -1,0 +1,14 @@
+input{
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+    &:hover{
+        background: #78a1de;
+        box-shadow: 0 0 30px #78a1de;
+    }
+        }

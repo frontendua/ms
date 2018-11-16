@@ -25,4 +25,21 @@ $('.header-top-area ul li a').on("click",function(e){
 })
 
 
+var instaFeed = new Instafeed({
+    get:'user',
+    userId:'1980766588',
+    accessToken: '1980766588.1677ed0.91f95d035930455dac64be033727eacf',
+    limit: '12',
+    resolution: 'low_resolution',
+    template: '<div class="col-md-3 mb-3"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"class="img-fluid"/></a></div>'
+});
+
+
+
+instaFeed.run();
+
+
+// -------------------------
+
+
 })
